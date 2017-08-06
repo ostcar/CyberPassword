@@ -1,0 +1,85 @@
+{
+  "addonDescription": {
+    "message": "Teil dem Cyber dein Passwort mit.",
+    "description": "The description of the Addon."
+  },
+  "insertPassword": {
+    "message": "Passwort einfügen",
+    "description": "Text in the context menu of a password form field."
+  },
+
+  "informPasswordNotStored": {
+    "message": "Das Passwort wird nicht gespeichert",
+    "description": "The info in the insert-password-popup that tells the user, that the password will not be stored."
+  },
+
+  "informPasswordMemoryStored": {
+    "message": "Das Password wird im Arbeitsspeicher gespeichert",
+    "description": "The info in the insert-password-popup that tells the user, that the password will be stored in memory."
+  },
+
+  "informPasswordDiskStored": {
+    "message": "Das Password wird auf der Festplatte gespeichert",
+    "description": "The info in the insert-password-popup that tells the user, that the password will be stored on disk."
+  },
+
+  "optionsChangeValuesWarning": {
+    "message": "Warnung! Änderungen dieser Werte werden alle deine Passwörter ändern!",
+    "description": "Warning on the settings page to inform the user, that changes will change all passwords"
+  },
+
+  "optionsSaveMasterPassword": {
+    "message": "Speichermethode für das MasterPassword",
+    "description": "Label on the select element to choose how to save the password"
+  },
+
+  "optionsSaveMasterPasswordNo": {
+    "message": "Nicht speichern",
+    "description": "Option for select element to choose how to save the password -> answer: no"
+  },
+
+  "optionsSaveMasterPasswordSession": {
+    "message": "Im Arbeitsspeicher",
+    "description": "Option for select element to choose how to save the password -> answer: session"
+  },
+
+  "optionsSaveMasterPasswordDisk": {
+    "message": "Auf der Festplatte",
+    "description": "Option for select element to choose how to save the password -> answer: disk"
+  },
+
+  "optionsUseLetters": {
+    "message": "Zeichen",
+    "description": "Label for input element to choose the used letters."
+  },
+
+  "optionsPasswordLength": {
+    "message": "Lenge des Passworts",
+    "description": "Label for input element to choose length of the password."
+  },
+
+  "optionsSubmit": {
+    "message": "Speichern",
+    "description": "Text on the button to submit the option form."
+  },
+
+  "optionsReset": {
+    "message": "Zurücksetzen",
+    "description": "Text on the button to reset the option form."
+  },
+
+  "passwordInputQuestion": {
+    "message": "Bitte das Masterpasswort eingeben",
+    "description": "Text on the password input popup that ask the user to enter the password"
+  },
+
+  "passwordInputControlCode": {
+    "message": "Control code",
+    "description": "Label on the password input popup for the control code"
+  },
+
+  "passwordInputOpenOptionPage": {
+    "message": "ändern",
+    "description": "Name of the link to the option page to change the way the password is stored"
+  }
+}

@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Foobar</title>
+  </head>
+  <body>
+    <input id="test" type="password" name="test">
+    <div id="show"></div>
+    <script>
+      document.getElementById("test").addEventListener("input", (event) => {
+        document.getElementById("show").innerHTML = document.getElementById("test").value
+      })
+    </script>
+  </body>
+</html>

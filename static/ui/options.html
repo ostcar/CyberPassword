@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CyberPassword</title>
+    <style>
+    label {
+      display: block;
+      margin: 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <span data-i18n="optionsChangeValuesWarning"></span>
+    <form>
+      <label>
+        <span data-i18n="optionsSaveMasterPassword"></span>:
+        <select id="saveMethod">
+          <option data-i18n="optionsSaveMasterPasswordNo" value="no"></option>
+          <option data-i18n="optionsSaveMasterPasswordSession" value="session" selected="selected"></option>
+          <option data-i18n="optionsSaveMasterPasswordDisk" value="store"></option>
+        </select>
+      </label>
+      <label>
+        <span data-i18n="optionsUseLetters"></span>:
+        <input id="letters" value="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" />
+      </label>
+      <label>
+        <span data-i18n="optionsPasswordLength"></span>:
+        <input id="length" value="16" type="number" />
+      </label>
+      <button data-i18n="optionsSubmit" type="submit">Save</button>
+      <button data-i18n="optionsReset" id="reset">Reset</button>
+    </form>
+    <script src="../options.js"></script>
+  </body>
+</html>

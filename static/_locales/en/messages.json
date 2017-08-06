@@ -1,0 +1,85 @@
+{
+  "addonDescription": {
+    "message": "Tells the cyber your password.",
+    "description": "The description of the Addon."
+  },
+  "insertPassword": {
+    "message": "Insert password",
+    "description": "Text in the context menu of a password form field."
+  },
+
+  "informPasswordNotStored": {
+    "message": "The passwort will not be stored",
+    "description": "The info in the insert-password-popup that tells the user, that the password will not be stored."
+  },
+
+  "informPasswordMemoryStored": {
+    "message": "The password will be stored in memory",
+    "description": "The info in the insert-password-popup that tells the user, that the password will be stored in memory."
+  },
+
+  "informPasswordDiskStored": {
+    "message": "The password will be stored on disk",
+    "description": "The info in the insert-password-popup that tells the user, that the password will be stored on disk."
+  },
+
+  "optionsChangeValuesWarning": {
+    "message": "Warning! Changing this values will change all your used passwords!",
+    "description": "Warning on the settings page to inform the user, that changes will change all passwords"
+  },
+
+  "optionsSaveMasterPassword": {
+    "message": "Save Masterpassword",
+    "description": "Label on the select element to choose how to save the password"
+  },
+
+  "optionsSaveMasterPasswordNo": {
+    "message": "Not at all",
+    "description": "Option for select element to choose how to save the password -> answer: no"
+  },
+
+  "optionsSaveMasterPasswordSession": {
+    "message": "Only for the session",
+    "description": "Option for select element to choose how to save the password -> answer: session"
+  },
+
+  "optionsSaveMasterPasswordDisk": {
+    "message": "On disk",
+    "description": "Option for select element to choose how to save the password -> answer: disk"
+  },
+
+  "optionsUseLetters": {
+    "message": "Use letters",
+    "description": "Label for input element to choose the used letters."
+  },
+
+  "optionsPasswordLength": {
+    "message": "Password length",
+    "description": "Label for input element to choose length of the password."
+  },
+
+  "optionsSubmit": {
+    "message": "save",
+    "description": "Text on the button to submit the option form."
+  },
+
+  "optionsReset": {
+    "message": "reset",
+    "description": "Text on the button to reset the option form."
+  },
+
+  "passwordInputQuestion": {
+    "message": "Please add your master password",
+    "description": "Text on the password input popup that ask the user to enter the password"
+  },
+
+  "passwordInputControlCode": {
+    "message": "Control code",
+    "description": "Label on the password input popup for the control code"
+  },
+
+  "passwordInputOpenOptionPage": {
+    "message": "change",
+    "description": "Name of the link to the option page to change the way the password is stored"
+  }
+}
