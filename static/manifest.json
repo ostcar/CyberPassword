@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "CyberPassword",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "__MSG_addonDescription__",
   "author": "Oskar Hahn",
   "homepage_url": "https://github.com/ostcar/CyberPassword",
@@ -21,7 +21,10 @@
   },
 
   "background": {
-      "scripts": ["background_scripts.js"]
+      "scripts": [
+        "background_scripts.js",
+        "asmcrypto.js"
+      ]
   },
 
   "options_ui": {

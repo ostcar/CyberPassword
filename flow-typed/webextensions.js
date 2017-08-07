@@ -2089,5 +2089,3 @@ declare var browser: {
   tabs: webext$tabs$tabs,
   windows: webext$windows$windows,
 };
-
-declare var i18n: webext$i18n$i18n;

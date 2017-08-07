@@ -13,6 +13,7 @@ module.exports = {
     "MouseEvent": true,
     "HTMLElement": true,
     "Event": true,
+    "asmCrypto": true,
   },
   "rules": {
     "comma-dangle": ["error", "always-multiline"],

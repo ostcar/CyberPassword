@@ -1,5 +1,4 @@
 // @flow
-import * as asmCrypto from 'asmcrypto.js'
 
 // Syncron function that returns the password for a given master password and
 // given domain.

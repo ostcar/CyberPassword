@@ -7,6 +7,7 @@ module.exports = {
     password_input: './src/password_input.js',
     options: './src/options.js',
   },
+  externals: 'asmcrypto.js',
   output: {
     path: path.resolve(__dirname, 'addon'),
     filename: '[name].js',
@@ -36,6 +37,7 @@ module.exports = {
       {from: 'static'},
       {from: 'LICENSE'},
       {from: 'README.md'},
+      {from: 'node_modules/asmcrypto.js/asmcrypto.js'},
     ]),
   ],
 }

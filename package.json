@@ -1,10 +1,10 @@
 {
   "name": "CyberPassword",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tells the cyber your password.",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "start": "web-ext --source-dir=addon run --browser-console --url=test.html",
     "test": "jest",
     "build-zip": "webpack && web-ext --source-dir=addon build",
@@ -29,6 +29,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.51.1",
+    "flow-typed": "^2.1.5",
     "jest": "^20.0.4",
     "regenerator-runtime": "^0.10.5",
     "web-ext": "^1.10.1",
@@ -36,7 +37,6 @@
   },
   "dependencies": {
     "asmcrypto.js": "^0.0.11",
-    "flow-typed": "^2.1.5",
     "install": "^0.10.1"
   }
 }
