@@ -1,0 +1,9 @@
+html, body {
+  min-height: 100px;
+}
+
+button {
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+}

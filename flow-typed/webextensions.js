@@ -760,7 +760,7 @@ declare type webext$runtime$onConnectExternal = {|
 |};
 
 declare type webext$runtime$onMessage = {|
-  addListener: (listener: (message?: any, sender: webext$runtime$MessageSender, sendResponse: Function) => ?boolean) => void,
+  addListener: (listener: (message?: any, sender: webext$runtime$MessageSender, sendResponse: Function) => ?boolean|Promise) => void,
   removeListener: (listener: Function) => void
 |};
 
@@ -800,7 +800,8 @@ declare type webext$runtime$runtime = {|
   sendNativeMessage: typeof webext$runtime$sendNativeMessage,
   getBrowserInfo: typeof webext$runtime$getBrowserInfo,
   getPlatformInfo: typeof webext$runtime$getPlatformInfo,
-  getPackageDirectoryEntry: typeof webext$runtime$getPackageDirectoryEntry
+  getPackageDirectoryEntry: typeof webext$runtime$getPackageDirectoryEntry,
+  id: string
 |};
 
 declare type webext$storage$StorageChange = {|

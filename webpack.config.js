@@ -6,6 +6,7 @@ module.exports = {
     background_scripts: './src/background_script.js',
     password_input: './src/password_input.js',
     options: './src/options.js',
+    browser_action: './src/browser_action.js',
   },
   externals: 'asmcrypto.js',
   output: {

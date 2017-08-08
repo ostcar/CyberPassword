@@ -14,6 +14,7 @@ module.exports = {
     "HTMLElement": true,
     "Event": true,
     "asmCrypto": true,
+    "jest": true,
   },
   "rules": {
     "comma-dangle": ["error", "always-multiline"],

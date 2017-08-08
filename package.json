@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack --watch & web-ext --source-dir=addon run --browser-console --url=test.html",
+    "start": "webpack --watch & web-ext --source-dir=addon run --url=test.html",
     "test": "jest",
     "build-zip": "webpack -p && web-ext --source-dir=addon build",
     "eslint": "eslint src/",

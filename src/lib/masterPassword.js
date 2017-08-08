@@ -1,6 +1,6 @@
 // @flow
 
-import {getConfig, getPassword, storePassword} from './config'
+import {getConfig, getPassword, storePassword, clearPassword} from './config'
 import type {configType} from './config'
 
 // Global variable that contains the password after it was given by the user
@@ -8,9 +8,10 @@ let masterPassword: string | null = null
 
 // Returns a Promise that returns the master password.
 // If the global varialbe masterPassword already contains the password, then
-// the promise it resolved at once. If not, a pop up is opend for
-// the user to type the password.
-export const getMasterPassword = (): Promise<string> => {
+// the promise it resolved at once. If not, look into the local storage.
+// if the password is not stored at all then open a popup window
+// to aks the user.
+export const getMasterPassword = (): Promise<string|null> => {
   return new Promise((resolve, reject) => {
     if (masterPassword === null) {
       // The masterPassword in not set.
@@ -111,11 +112,30 @@ const openPasswordInput = (): Promise<string> => {
 }
 
 // Saves the password acordingly to the settings.
-const savePassword = (method: string, password: string) => {
+export const savePassword = (method: string, password: string) => {
   if (method === 'store') {
     storePassword(password)
     masterPassword = password
   } else if (method === 'session') {
     masterPassword = password
   }
+}
+
+// Returns a Promis that is resolved to true, if the MasterPassword is stored
+// in memory or storage. Else it is resolved to false
+export const hasMasterPassword = ():Promise<bool> => {
+  if (masterPassword !== null) {
+    return Promise.resolve(true)
+  }
+  return getPassword()
+  .then((password: string|null) => {
+    return Promise.resolve(password !== null)
+  })
+}
+
+// Clears the MasterPassword from memory and storages. Returns a Promise that is
+// resolved when the password is cleared.
+export const clearMasterPassword = () => {
+  masterPassword = null
+  return clearPassword()
 }
