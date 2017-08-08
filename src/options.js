@@ -1,7 +1,7 @@
 // @flow
 
-import {getConfig, setConfig, resetConfig} from './config'
-import {translateHTML} from './utils'
+import {getConfig, setConfig, resetConfig} from './lib/config'
+import {translateHTML} from './lib/utils'
 
 // Get the required html-elements and make sure, they are there.
 const optionForm = document.getElementsByTagName('form')[0]
@@ -47,7 +47,7 @@ optionForm.addEventListener('submit', (event) => {
   })
 })
 
-// Set the form elements and the text-strings when the DOM is ready.
+// Set the form elements and translat the page when the DOM is ready.
 document.addEventListener('DOMContentLoaded', () => {
   restoreOptions()
   translateHTML()

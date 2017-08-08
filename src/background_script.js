@@ -1,8 +1,8 @@
 // @flow
-import {buildPassword} from './buildPassword'
-import {secondLevelDomain} from './utils'
-import {getMasterPassword} from './masterPassword'
-import {getConfig} from './config'
+import {buildPassword} from './lib/buildPassword'
+import {secondLevelDomain} from './lib/utils'
+import {getMasterPassword} from './lib/masterPassword'
+import {getConfig} from './lib/config'
 
 //  Add a menu entry for password form fields.
 browser.contextMenus.create({

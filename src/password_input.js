@@ -1,8 +1,8 @@
 // @flow
 
-import {buildPassword} from './buildPassword'
-import {getConfig} from './config'
-import {translateHTML} from './utils'
+import {buildPassword} from './lib/buildPassword'
+import {getConfig} from './lib/config'
+import {translateHTML} from './lib/utils'
 
 // Get the required html-elements and make sure, they are there.
 const passwordForm = document.getElementsByTagName('form')[0]
