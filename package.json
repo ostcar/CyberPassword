@@ -5,11 +5,12 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
-    "start": "web-ext --source-dir=addon run --browser-console --url=test.html",
+    "start": "webpack --watch & web-ext --source-dir=addon run --browser-console --url=test.html",
     "test": "jest",
-    "build-zip": "webpack && web-ext --source-dir=addon build",
+    "build-zip": "webpack -p && web-ext --source-dir=addon build",
     "eslint": "eslint src/",
-    "web-ext-lint": "web-ext lint --source-dir=addon --warnings-as-errors"
+    "web-ext-lint": "web-ext lint --source-dir=addon --warnings-as-errors",
+    "bundle-source": "git archive -o web-ext-artifacts/source.zip HEAD"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
