@@ -3,13 +3,11 @@
 // The argument is a full url. The function returns the last two elements of the
 // domain.
 export const secondLevelDomain = (url:string): string => {
-  // Create a temp a-element to use the api from it
-  let element = document.createElement('a')
-  element.href = url
-  if (element.protocol === 'file:') {
+  let u = new URL(url)
+  if (u.protocol === 'file:') {
     return 'file'
   }
-  return element.hostname.split('.').slice(-2).join('.')
+  return u.hostname.split('.').slice(-2).join('.')
 }
 
 export const translateHTML = (): void => {
