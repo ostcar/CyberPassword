@@ -81,5 +81,25 @@
   "passwordInputOpenOptionPage": {
     "message": "change",
     "description": "Name of the link to the option page to change the way the password is stored"
+  },
+
+  "browserActionForgetButton": {
+    "message": "Forget password",
+    "description": "Lable of the forget button"
+  },
+
+  "browserActionShowButtonShow": {
+    "message": "Show password for domain",
+    "description": "Lable of the show button in its first state"
+  },
+
+  "browserActionShowButtonSure": {
+    "message": "Are you sure?",
+    "description": "Lable of the show button in its second state"
+  },
+
+  "browserActionShowButtonClear": {
+    "message": "Clear",
+    "description": "Lable of the show button in its third state"
   }
 }

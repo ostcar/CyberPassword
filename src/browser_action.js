@@ -60,7 +60,7 @@ showButton.addEventListener('click', () => {
   clickCount++
   if (clickCount === 1) {
     // Ask the user if he is sure on the first click
-    showButton.textContent = 'Are you sure?'
+    showButton.textContent = browser.i18n.getMessage('browserActionShowButtonSure')
   } else if (clickCount === 2) {
     // Show the Password on the second click
     browser.runtime.sendMessage({
@@ -68,13 +68,13 @@ showButton.addEventListener('click', () => {
     }).then((password: string) => {
       passwordElement.value = password
       passwordElement.style.display = 'block'
-      showButton.textContent = 'clear'
+      showButton.textContent = browser.i18n.getMessage('browserActionShowButtonClear')
     })
   } else {
     // Clear the shown password on the third click
     passwordElement.value = ''
     passwordElement.style.display = 'none'
-    showButton.textContent = 'start...'
+    showButton.textContent = browser.i18n.getMessage('browserActionShowButtonShow')
     clickCount = 0
   }
 })
