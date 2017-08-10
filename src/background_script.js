@@ -21,13 +21,16 @@ const buildPasswordForDomain = (domain: string): Promise<string> => {
   })
   .then(config => {
     // Build the password for the domain.
-    return Promise.resolve(buildPassword(
+    return buildPassword(
       masterPassword,
       domain,
       config.letters,
       config.length,
       config.iterations,
-    ))
+    )
+    .then(password => {
+      return Promise.resolve(password)
+    })
   })
 }
 

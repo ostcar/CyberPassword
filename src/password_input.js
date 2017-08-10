@@ -47,7 +47,10 @@ passwordForm.addEventListener('submit', (event) => {
 passwordInput.addEventListener('input', (event: Event) => {
   password = passwordInput.value
   if (password.length >= controlMinPasswordLength) {
-    controlCode.textContent = buildPassword(password, controlDomain, controlAlphabet, controlLength, controlInterations)
+    buildPassword(password, controlDomain, controlAlphabet, controlLength, controlInterations)
+    .then(password => {
+      controlCode.textContent = password
+    })
   } else {
     controlCode.textContent = ''
   }
