@@ -63,7 +63,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
           tabId,
           {
             // TODO: Use frameID
-            'code': `document.activeElement.value = "${password}"`,
+            'code': `document.activeElement.value = "${password}";document.activeElement.dispatchEvent(new Event("input"))`,
           }
         )
       })
